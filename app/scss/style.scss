@@ -290,6 +290,10 @@
   &__inner-text {
     font-size: 16px;
   }
+
+  &__inner-text span {
+    display: block;
+  }
 }
 
 @import 'media';
