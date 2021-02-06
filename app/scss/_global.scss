@@ -42,3 +42,10 @@ a {
   border: none;
   color: #fff;
 }
+
+.title {
+  color: $title;
+  @extend %dmsans-700;
+  font-size: 36px; 
+  line-height: 43px;
+}
