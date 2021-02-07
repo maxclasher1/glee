@@ -49,3 +49,25 @@ a {
   font-size: 36px; 
   line-height: 43px;
 }
+
+.link {
+  display: block;
+  font-size: 15px;
+  line-height: 12px;
+  color: #436372;
+  border: 1px solid #b3b7b5;
+  border-radius: 5px;
+  max-width: 180px;
+  width: 100%;
+  padding: 22px 10px 24px 19px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    background-image: url('../images/icons/right-arrow.svg');
+    top: 23px;
+    right: 19px;
+  }
+}

@@ -321,7 +321,7 @@
 }
 
 .products {
-  padding: 75px 0;
+  padding: 75px 0 180px;
 
   &__filter {
     display: flex;
@@ -433,6 +433,50 @@
   &__price {
     color: $bg-btn;
     text-align: center;
+  }
+}
+
+.recommend__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.recommend-item {
+  max-width: 870px;
+  width: 100%;
+  background-color: #fcd7b6;
+  padding: 90px 140px;
+  display: flex;
+
+  &__img-box {
+    margin-top: -190px;
+    
+  }
+
+  &__box {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    color: $thing-title;
+    @extend %dmsans-700;
+  }
+
+  &__text {
+    margin-top: 7px;
+    font-size: 16px;
+    color: $thing-title;
+    @extend %rubik-400;
+  }
+
+  &__link {
+    
+    margin-top: 35px;
   }
 }
 
