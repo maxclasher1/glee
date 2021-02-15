@@ -500,8 +500,11 @@
   &__title {
     font-size: 20px;
     @extend %dmsans-700;
-    color: $title;
     max-width: 172px;
+  }
+
+  &__link {
+    color: $title;
   }
 
   &__subtitle {
