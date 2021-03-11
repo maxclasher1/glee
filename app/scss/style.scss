@@ -705,6 +705,8 @@
 
   &__reg {
     text-align: center;
+    border-top: 2px solid #f6f6f6;
+    padding-top: 33px;
   }
 
   &__reg-text {
@@ -721,6 +723,131 @@
   }
 }
 
+.mission {
+  color: $thing-title;
+
+  &__inner {
+    padding: 120px 0;
+    display: flex;
+  }
+
+  &__imgbox {
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  &__main {
+    margin-left: 48px;
+    max-width: 570px;
+    padding: 84px 0 96px;
+  }
+
+  &__exp {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  &__exp-num {
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #a3bbc8;
+    line-height: 0.5;
+  }
+
+  &__exp-list {
+    margin-left: 29px;
+    font-size: 16px;
+    @extend %rubik-400;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    padding-top: 42px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-top: 3px solid rgba(9, 49, 111, 0.1);
+      top: 0;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    padding: 16px 16px 25px 90px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      left: 28px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__item+.mission__item {
+    border-left: 1px solid rgba(9, 49, 111, 0.1);
+  }
+
+  &__bg1 {
+    &::before {
+      background-image: url('../images/about/1.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__bg2 {
+    &::before {
+      background-image: url('../images/about/2.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__bg3 {
+    &::before {
+      background-image: url('../images/about/3.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: #243f4d;
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 17px;
+      color: #4c4c4c;
+    }
+  }
+}
 
 
 @import 'media';
