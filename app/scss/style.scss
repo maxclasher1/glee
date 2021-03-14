@@ -849,5 +849,154 @@
   }
 }
 
+.statistics {
+  background-color: #fcd7b6;
+  padding: 88px 0 84px;
+  color: $thing-title;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    @extend %dmsans-700;
+  }
+
+  &__img {
+    margin: 0 auto;
+    max-width: 73px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 26px;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: 32px;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.team {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 305px;
+    width: 100%;
+    margin-right: 98px;
+  }
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__text {
+    margin-bottom: 38px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 55px;
+    @extend %rubik-700;
+    color: #ffffff;
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    padding: 19px 60px 18px 18px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 11px;
+      right: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/about/right-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  }
+
+  &__examples {
+    width: 100%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+    column-gap: 30px;
+  }
+
+  &__item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 370px;
+    width: 100%;
+    height: 320px;
+    position: relative;
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background-color: #fff;
+    max-width: 325px;
+    width: 100%;
+    padding: 31px 21px 28px 24px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    width: 100%;
+  }
+
+  &__position {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #565872;
+    width: 100%;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-link+.team__social-link {
+    margin-left: 7px;
+  }
+
+  &__social-link {
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-radius: 50%;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
 
 @import 'media';
